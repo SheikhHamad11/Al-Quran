@@ -16,7 +16,7 @@
       rel="stylesheet"
       href="	https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"
     />
-    <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css" /> -->
     <link rel="stylesheet" type="text/css" href="style.css" />
     <!-- <link rel="stylesheet" type="text/css" href="/css/styles.css" /> -->
     <!-- owl cresoul  -->
@@ -53,6 +53,34 @@
 
   <body class="d-flex flex-column min-vh-100">
     <header>
+      <!-- topbar  -->
+      <nav
+        class="navbar navbar-dark navbar-expand-lg d-flex justify-content-around"
+      >
+        <a
+          href="https://wa.me/923224282410?text=Hello%20there!%20I%20have%20a%20question."
+          style="text-decoration: none; color: black"
+          ><i class="bi bi-geo-alt text-secondary fs-4 me-2"></i
+          >Lahore,Pakistan</a
+        >
+
+        <a
+          href="mailto:alquran@gmail.com"
+          style="text-decoration: none; color: black"
+          ><i class="bi bi-envelope text-primary fs-4 me-2"></i
+          >AlQuran@gmail.com</a
+        >
+        <div class="d-flex my-2">
+          <a href="https://www.facebook.com" target="_blank"
+            ><i class="bi bi-facebook fs-3 p-2 me-2"></i
+          ></a>
+          <a
+            href="https://wa.me/923224282410?text=Hello%20there!%20I%20have%20a%20question."
+            ><i class="bi bi-whatsapp text-success fs-3 p-2"></i
+          ></a>
+          <a href=""><i class="bi bi-skype text-info fs-3 p-2"></i></a>
+        </div>
+      </nav>
       <!-- navbar  -->
       <nav
         class="navbar navbar-dark navbar-expand-lg shadow"
@@ -65,10 +93,7 @@
             style="width: 120px"
             alt=""
           />
-          <button id="toggleMute" class="btn bg-transparent border-0">
-            <!-- <i class="bi bi-stop text-secondary"></i> -->
-            <i class="bi bi-volume-mute text-secondary"></i>
-          </button>
+
           <button
             class="navbar-toggler"
             type="button"
@@ -90,7 +115,7 @@
                 >Home</a
               >
               <a class="nav-link active" href="#about">About</a>
-              <a class="nav-link active" href="#services">Services</a>
+              <a class="nav-link active" href="#departments">Departments</a>
               <a class="nav-link active" href="#reviews">Reviews</a>
               <a class="nav-link active" href="#contact">Contact Us</a>
             </div>
@@ -112,12 +137,6 @@
           type="video/mp4"
           width="100%"
         ></video>
-        <audio
-          id="audio"
-          src="/assets/Nasheed - As Subhu Bada Min Qari Waheed Zafar Naat. Allah hu Allah hoo [bLN0FUw4-VE].opus"
-          autoplay
-          muted
-        ></audio>
 
         <div class="overlay">
           <div class="text-center">
@@ -165,14 +184,12 @@
         <img
           class="img-fluid w-100"
           style="height: 300px"
-          src="./assets/girl-reading.jpg"
+          src="./assets/reading quran.jpg"
           alt="reading-quran"
         />
         <div class="overlay">
           <div style="text-align: center">
-            <h1 class="englsih-text">
-              اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَق َ
-            </h1>
+            <h1 class="englsih-text">اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَق</h1>
             <h1 class="english-text">
               Read: In the Name of your Lord who created.
             </h1>
@@ -182,8 +199,8 @@
       </div>
 
       <!-- About section  -->
-      <div class="container mt-5" id="about">
-        <div class="row d-flex">
+      <div class="container my-5" id="about">
+        <div class="row d-flex flex-column-reverse flex-md-row">
           <div class="col-12 col-md-6 col-lg-7 my-5 text-center text-md-start">
             <h3 style="font-size: 25px; color: #e0c141; font-weight: bold">
               About us
@@ -215,161 +232,147 @@
           </div>
         </div>
       </div>
+      <!-- about section ends  -->
 
-      <!-- section5  -->
-      <div class="image-container mt-5" style="height: 300px">
-        <img
-          class="img-fluid w-100"
-          style="height: 300px; z-index: 0"
-          src="./assets/reading quran.jpg"
-          alt=""
-        />
-
-        <div class="overlay">
-          <div class="text-container text-center">
-            <h1 class="english-text">But Allah is your protector,</h1>
-            <h1 class="english-text">and He is the best of helpers.</h1>
-            <p class="fs-5 fw-bold">Surah Al Imran, 3 :150</p>
+      <!-- why choose us  -->
+      <section style="background-color: #022c43">
+        <h1 class="text-center text-white pt-3">
+          WHY CHOOSE OUR HOLY QURAN ACADEMY
+        </h1>
+        <div class="container px-4 text-white py-5">
+          <div class="row d-flex justify-content-between">
+            <div class="services-col col-12 col-md-6 col-lg-4 mb-4 mb-lg-2">
+              <i aria-hidden="true" class="bi bi-book fs-1"></i>
+              <h2 class="services-text">One-on-One Lessons</h2>
+              <p class="services-para">
+                Our tutors focus solely on you, making sure you understand every
+                lesson and move forward at your own speed. This tailored method
+                guarantees that your learning experience is effective and suits
+                exactly what you need.
+              </p>
+            </div>
+            <div class="services-col col-12 col-md-6 col-lg-4 mb-4 mb-lg-2">
+              <i aria-hidden="true" class="bi bi-clock fs-1"></i>
+              <h2 class="services-text">AnyTime Access</h2>
+              <p class="services-para">
+                Our learning materials are available 24/7, giving you the
+                freedom to study the Quran whenever it fits your schedule. Our
+                online platform ensures accessibility, empowering you to learn
+                at your own pace and convenience.
+              </p>
+            </div>
+            <div class="services-col col-12 col-md-6 col-lg-4 mb-4 mb-lg-2">
+              <i class="bi bi-currency-dollar fs-1"></i>
+              <h2 class="services-text">Flexible Pricing</h2>
+              <p class="services-para">
+                At our Online Quran Academy, you can pay what you can afford and
+                still receive high-quality Quran education. We do this to ensure
+                that everyone, regardless of financial situation, can access our
+                online Quran classes
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- services section  -->
+      <!--Start Department -->
 
-      <div class="container my-5" id="services">
-        <h3 style="font-size: 25px; color: #e0c141; font-weight: 900">
-          Services
-        </h3>
-        <h1 style="font-size: 45px; color: black; font-weight: 900">
-          Serving Humanity
-        </h1>
-        <div class="row d-flex">
-          <div
-            class="services-col col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center"
-          >
-            <img
-              src="https://learntaleemulquran.com/wp-content/uploads/2024/06/quran-1.webp"
-              class="services-img"
-              alt=""
-            />
-            <h2 class="services-text">Tajweed ul Quran</h2>
-            <p class="services-para">
-              Tajweed ul Quran services offer expert guidance and instruction in
-              the precise pronunciation and recitation rules of the Quranic text
-            </p>
-          </div>
-          <div
-            class="services-col col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center"
-          >
-            <img
-              src="	https://learntaleemulquran.com/wp-content/uploads/2024/06/quran-class.webp"
-              class="services-img"
-              alt=""
-            />
-            <h2 class="services-text">Madni/ Noorani Qaida</h2>
-            <p class="services-para">
-              Madni/Noorani Qaida provide foundational learning for beginners to
-              master Arabic letters, pronunciation, & basic Quranic recitation.
-            </p>
-          </div>
-          <div
-            class="services-col col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center"
-          >
-            <img
-              src="	https://learntaleemulquran.com/wp-content/uploads/2024/06/solat-1.webp"
-              class="services-img"
-              alt=""
-            />
-            <h2 class="services-text">Salah & Prayer</h2>
-            <p class="services-para">
-              Salah and prayers offer comprehensive instruction and guidance on
-              performing Islamic prayers (Salah) correctly according to Sunnah.
-            </p>
-          </div>
-          <div
-            class="services-col col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center"
-          >
-            <img
-              src="https://learntaleemulquran.com/wp-content/uploads/2024/06/Untitled_design__34_-removebg-preview.webp"
-              class="services-img"
-              alt=""
-            />
-            <h2 class="services-text">Ahadees e Nabvi</h2>
-            <p class="services-para">
-              Ahadis offer comprehensive collections, and scholarly analysis of
-              the sayings, actions, and approvals for a deeper understanding and
-              application of Islamic teachings.
-            </p>
+      <div class="container my-5" id="departments">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-title text-center" data-aos="fade-in">
+              <h3>Our Departments</h3>
+              <h1>Popular Departments</h1>
+            </div>
           </div>
         </div>
         <div class="row">
           <div
-            class="services-col col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center"
+            class="col-lg-4 col-md-6 py-3 mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="200"
           >
-            <img
-              src="https://learntaleemulquran.com/wp-content/uploads/2024/06/Untitled_design__33_-removebg-preview.webp"
-              class="services-img"
-              alt=""
-            />
-            <h2 class="services-text">Islamic Knowledge</h2>
-            <p class="services-para">
-              Islamic Knowledge services provide educational resources, courses,
-              and guidance covering various aspects of Islamic theology,
-              jurisprudence, history, and spirituality for individuals seeking a
-              deeper understanding of Islam.
-            </p>
+            <div class="single-item">
+              <div class="item-icon">
+                <img
+                  class="img-fluid w-50"
+                  src="assets/quran3.png"
+                  alt="icon"
+                />
+              </div>
+              <div class="item-text">
+                <h4>Al-Quran Online Academy</h4>
+                <p style="display: none">
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using.
+                </p>
+                <a href="#" class="link_btn"
+                  >Read More <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
           </div>
           <div
-            class="services-col col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center"
+            class="col-lg-4 col-md-6 py-3 mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="200"
           >
-            <img
-              src="https://learntaleemulquran.com/wp-content/uploads/2024/06/y-removebg-preview.webp
-              "
-              class="services-img"
-              alt=""
-            />
-            <h2 class="services-text">Islamic Manners</h2>
-            <p class="services-para">
-              Islamic Manners provide guidance and resources for cultivating
-              etiquette, morals, and behaviors aligned with Islamic teachings,
-              fostering harmonious relationships and virtuous conduct in daily
-              life.
-            </p>
+            <div class="single-item">
+              <div class="item-icon">
+                <img
+                  class="img-fluid w-50"
+                  src="assets/istakhara.jpg"
+                  alt="icon"
+                />
+              </div>
+              <div class="item-text">
+                <h4>ISTIKHARA Online</h4>
+                <p style="display: none">
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using.
+                </p>
+                <a href="#" class="link_btn mt-2"
+                  >Read More <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
           </div>
           <div
-            class="services-col col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center"
+            class="col-lg-4 col-md-6 py-3 mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="200"
           >
-            <img
-              src="https://learntaleemulquran.com/wp-content/uploads/2024/06/Untitled_design-removebg-preview.webp"
-              class="services-img"
-              alt=""
-            />
-            <h2 class="services-text">Masnoon Duas</h2>
-            <p class="services-para">
-              Masnoon Duasoffer a curated collection from the Quran and Sunnah,
-              providing guidance and resources for Muslims to incorporate these
-              prayers into their daily routines for spiritual growth and
-              connection with Allah.
-            </p>
+            <div class="single-item">
+              <div class="item-icon">
+                <img
+                  class="img-fluid w-50"
+                  src="assets/darood.png"
+                  alt="icon"
+                />
+              </div>
+              <div class="item-text">
+                <h4>Darood-o-Salam & Esal-e-Sawab</h4>
+                <p style="display: none">
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using.
+                </p>
+                <a href="#" class="link_btn mt-2"
+                  >Read More <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
           </div>
-          <div
-            class="services-col col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center"
-          >
-            <img
-              src="https://learntaleemulquran.com/wp-content/uploads/2024/06/Untitled_design__1_-removebg-preview.webp"
-              class="services-img"
-              alt=""
-            />
-            <h2 class="services-text">Six Kalimahs</h2>
-            <p class="services-para">
-              Six Kalma services offer guidance and resources for learning and
-              reciting the fundamental declarations of faith in Islam, providing
-              foundational knowledge and spiritual connection for Muslims
-              worldwide.
-            </p>
+        </div>
+        <div class="row" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-md-12">
+            <div class="view-more pt-4 mx-auto text-center">
+              <a href="#" class="button_five">View More</a>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- End Department -->
 
       <!-- Reviews section  -->
       <section id="reviews" class="pt-5" style="background-color: #022c43">
@@ -383,12 +386,12 @@
                 >
                   <img
                     class="img-fluid w-25 rounded-circle"
-                    src="assets/wasim.jpg"
+                    src="assets/hamad.jpg"
                     alt=""
                   />
                 </div>
                 <h5 class="mb-0 text-center text-white">
-                  <b>Muhammad Wasim</b>
+                  <b>Hamad-Ur-Rehman</b>
                 </h5>
                 <p class="text-center p-4 text-white">
                   This website has become my go-to destination for reliable
@@ -403,12 +406,12 @@
                 >
                   <img
                     class="img-fluid w-25 rounded-circle"
-                    src="assets/kid.jpg"
+                    src="assets/hamza.jpg"
                     alt=""
                   />
                 </div>
                 <h5 class="mb-0 text-center text-white">
-                  <b>Ghulam Mustafa</b>
+                  <b>Hamza Sheikh</b>
                 </h5>
                 <p class="text-center p-4 text-white">
                   I've been a loyal user of this Islamic website for years, and
@@ -424,12 +427,12 @@
                 >
                   <img
                     class="img-fluid w-25 rounded-circle"
-                    src="assets/Mohammad-Ali.jpg"
+                    src="assets/hassan.jpg"
                     alt=""
                   />
                 </div>
                 <h5 class="mb-0 text-center text-white">
-                  <b>Mohammad Ali</b>
+                  <b>Mohammad Hassan</b>
                 </h5>
                 <p class="text-center p-4 text-white">
                   As a busy professional, I've always struggled to find time for
@@ -444,12 +447,12 @@
                 >
                   <img
                     class="img-fluid w-25 rounded-circle"
-                    src="assets/ali.jpg"
+                    src="assets/ahmad.jpg"
                     alt=""
                   />
                 </div>
                 <h5 class="mb-0 text-center text-white">
-                  <b>Ali Raza</b>
+                  <b>Ahamd Raza</b>
                 </h5>
                 <p class="text-center p-4 text-white">
                   I've been a loyal user of this Islamic website for years, and
@@ -483,12 +486,13 @@
           </div>
         </div>
       </section>
+      <!-- reviews section end  -->
 
       <!-- contact section  -->
       <div class="container my-5" id="contact">
         <h3 style="font-size: 30px; color: #e0c141">Contact Us</h3>
         <div class="row d-flex justify-content-between mt-4">
-          <div class="col-12 col-lg-4 d-flex align-items-center flex-column">
+          <div class="col-12 col-md-4 d-flex align-items-center flex-column">
             <div class="contact-section text-center">
               <svg
                 aria-hidden="true"
@@ -506,7 +510,7 @@
             <p>Lahore,Pk</p>
           </div>
 
-          <div class="col-12 col-lg-4 d-flex align-items-center flex-column">
+          <div class="col-12 col-md-4 d-flex align-items-center flex-column">
             <div class="contact-section text-center">
               <svg
                 aria-hidden="true"
@@ -524,7 +528,7 @@
             <h3>Email</h3>
             <p>AlQuran94@gmail.com</p>
           </div>
-          <div class="col-12 col-lg-4 d-flex align-items-center flex-column">
+          <div class="col-12 col-md-4 d-flex align-items-center flex-column">
             <div class="contact-section text-center">
               <svg
                 aria-hidden="true"
@@ -564,7 +568,14 @@
                 Welcome aboard!”
               </p>
 
-              <p class="f-text">Powered By <small>Hamad-Ur-Rehman</small></p>
+              <p class="f-text">
+                Powered By
+                <a
+                  style="color: white"
+                  href="https://www.linkedin.com/in/sheikh-hamad-99928a26b/"
+                  ><small>Hamad-Ur-Rehman</small></a
+                >
+              </p>
             </div>
           </div>
           <div class="col-lg-2 bg-transparent">
@@ -581,7 +592,7 @@
                   <a href="#">Privacy Policy</a>
                 </li>
                 <li class="list-group-item border-0 my-2">
-                  <a href="#services">Services</a>
+                  <a href="#departments">Departments</a>
                 </li>
               </ul>
             </div>
@@ -594,10 +605,10 @@
               <b class="ms-3 ms-md-5 f-text">Contact Us</b>
               <ul class="">
                 <li class="list-group-item border-0 my-2">
-                  <a href=""> Lahore,Pakistan</a>
+                  <a href="">Lahore,Pakistan</a>
                 </li>
                 <li class="list-group-item border-0 my-2">
-                  <a href="tel://+92 312 4047953">+92322-4119874</a>
+                  <a href="tel://+92 322 4282410">+92322-4282410</a>
                 </li>
                 <li class="list-group-item border-0 my-2">
                   <a href="mailto:alquran@gmail.com">AlQuran@gmail.com</a>
@@ -613,15 +624,10 @@
               <strong class="ms-4 f-text">Follow Us</strong>
 
               <div class="d-flex my-2">
-                <a
-                  href="https://www.facebook.com/profile.php?id=100052800727530&mibextid=ZbWKwL"
-                  target="_blank"
+                <a href="https://www.facebook.com" target="_blank"
                   ><i class="bi bi-facebook fs-3 p-2"></i
                 ></a>
-                <a
-                  href="https://www.instagram.com/zainisheikh410?igsh=ZTcycmF0emU0ank5"
-                  ><i class="bi bi-instagram text-danger fs-3 p-2"></i
-                ></a>
+                <a href=""><i class="bi bi-skype text-info fs-3 p-2"></i></a>
                 <a
                   href="https://wa.me/923224282410?text=Hello%20there!%20I%20have%20a%20question."
                   ><i class="bi bi-whatsapp text-success fs-3 p-2"></i

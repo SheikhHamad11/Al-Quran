@@ -29,7 +29,7 @@ ul li a:hover{
    margin: 0 0;
 }
 .services-text{
-    color: #022c43;
+    color: #e0c141;
     font-weight: bold;
     font-size: 25px;
 }
@@ -37,9 +37,18 @@ ul li a:hover{
     text-align: center;
 }
 
-.services-col:hover{
-background-color: #e0c141;
+.services-col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: #e0c141;
+border-width: 1px;
+border-style: solid;
+width: 350px;
+margin: 0 auto;
+
 }
+
 
 /* contact section  */
 .contact-section{
@@ -58,7 +67,6 @@ background-color: #e0c141;
   position: relative;
 
 }
-
 
 .overlay {
   position: absolute;
@@ -92,6 +100,90 @@ background-color: #e0c141;
 
 .english-text{
   font-size: 45px; font-weight: 700; color: white
+}
+
+
+/*************************
+24. Department Page
+************************/
+.single-item {
+  padding: 3rem 1.5rem;
+  border: 2px solid #ddd;
+  text-align: center;
+  transition: all 0.4s linear 0s;
+}
+.single-item h4 a {
+  color: #002147;
+  margin: 15px 0;
+  transition: all 0.4s linear 0s;
+}
+.single-item h4 a:hover {
+  text-decoration: none;
+  color: #50b748;
+}
+.single-item .item-icon {
+  padding-bottom: 30px;
+}
+.single-item:hover {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  border-color:#002147;
+}
+
+
+.section-title {
+  padding-bottom: 20px;
+}
+.section-title h3 {
+  color:#e0c141;
+  font-size: 25px;
+  font-weight: 700;
+}
+.section-title h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+
+.link_btn {
+  display: inline-block;
+  color: #e0c141;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.4s linear 0s;
+}
+.link_btn i {
+  transition: all 0.4s linear 0s;
+}
+.link_btn:hover {
+  text-decoration: none;
+  color: #e0c141;
+}
+.link_btn:hover i {
+  padding-left: 5px;
+}
+
+.button_five {
+  display: inline-block;
+  position: relative;
+  background-color: #e0c141;
+  color: #fff;
+  padding: 10px 35px;
+  transition: all 0.4s linear 0s;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button_five:hover{
+  background-color: transparent;
+  color: #e0c141;
+  border: #e0c141;
+  border-width: 2px;
+  border-style: solid;
 }
 
 
