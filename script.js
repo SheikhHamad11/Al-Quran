@@ -27,3 +27,33 @@
 //     audio.play();
 //   }
 // }
+window.addEventListener("scroll", function () {
+  var elements = document.querySelectorAll(".fade-in-text");
+  var screenPosition = window.innerHeight / 1.3;
+
+  elements.forEach(function (element) {
+    var elementPosition = element.getBoundingClientRect().top;
+
+    if (elementPosition < screenPosition) {
+      element.classList.add("visible");
+    }
+  });
+});
+
+window.addEventListener("scroll", function () {
+  var elements = document.querySelectorAll(
+    ".typing-element h1, .typing-element p, .typing-element h3"
+  );
+  var screenPosition = window.innerHeight / 1.3;
+
+  elements.forEach(function (element) {
+    var elementPosition = element.getBoundingClientRect().top;
+
+    if (
+      elementPosition < screenPosition &&
+      !element.classList.contains("typed")
+    ) {
+      element.classList.add("typed");
+    }
+  });
+});

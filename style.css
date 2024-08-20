@@ -13,6 +13,10 @@ html {
 p{
   font-size: 18px;
 }
+
+.h1-text{
+  font-size: 45px; font-weight: bold;
+}
 ul li a{
     text-decoration: none;
     color:white;
@@ -48,6 +52,21 @@ width: 350px;
 margin: 0 auto;
 
 }
+
+
+
+.fade-in-text {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.visible {
+  opacity: 1;
+}
+
+
+
+
 
 
 /* contact section  */
